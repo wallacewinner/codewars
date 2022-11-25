@@ -1,4 +1,4 @@
-package com.example.training;
+package com.codewar.training;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

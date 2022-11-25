@@ -1,4 +1,4 @@
-package com.example.training;
+package com.codewar.training;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
