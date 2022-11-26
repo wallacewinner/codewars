@@ -1,5 +1,7 @@
 package com.codewar.training;
 
+import java.util.List;
+
 /**
  * A pangram is a sentence that contains every single letter of the alphabet at least once.
  * For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram,
@@ -9,7 +11,8 @@ package com.codewar.training;
 
 public class DetectPangram {
     public boolean check(String sentence) {
-
-        return false;
+        List sentenceSplited = List.of(sentence.toLowerCase().split(""));
+        List alphabet = List.of("abcdefghijklmnopqrstuvwxyz".split(""));
+        return sentenceSplited.containsAll(alphabet);
     }
 }
