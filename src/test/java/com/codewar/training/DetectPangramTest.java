@@ -17,4 +17,10 @@ public class DetectPangramTest {
         DetectPangram pc = new DetectPangram();
         assertEquals(false, pc.check(pangram2));
     }
+    @Test
+    public void test3() {
+        String pangram2 = "Pack my box with five dozen liquor jugs.";
+        DetectPangram pc = new DetectPangram();
+        assertEquals(true, pc.check(pangram2));
+    }
 }
