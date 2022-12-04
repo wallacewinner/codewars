@@ -11,7 +11,6 @@ package com.codewar.training;
  */
 public class KeepHydrated {
     public int Liters(double time) {
-
-        return 0;
+        return (int) (time * 0.5);
     }
 }
