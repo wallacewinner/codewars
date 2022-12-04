@@ -7,4 +7,6 @@ package com.codewar.training;
  * 5, "Hello" -> "HelloHelloHelloHelloHello"
  */
 public class StringRepeat {
+    public static String repeatStr(int i, String a) {
+    }
 }
