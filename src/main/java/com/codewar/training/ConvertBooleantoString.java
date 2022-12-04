@@ -6,6 +6,6 @@ package com.codewar.training;
  */
 public class ConvertBooleantoString {
     public static String convert(boolean b) {
-        return null;
+        return String.valueOf(b);
     }
 }
