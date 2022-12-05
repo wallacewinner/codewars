@@ -19,6 +19,7 @@ package com.codewar.training;
  */
 public class SquareOfSquares {
     public static boolean isSquare(int n) {
-        return false;
+        double square = Math.sqrt(n);
+        return ((square - Math.floor(square)) == 0);
     }
 }
