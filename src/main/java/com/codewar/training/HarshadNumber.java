@@ -14,7 +14,27 @@ package com.codewar.training;
 public class HarshadNumber {
 
     public static boolean numberJoy(Integer value){
+        int digitSum = 0;
+        for (String number : value.toString().split("")) {
+            digitSum += Integer.valueOf(number);
+        }
+        int digitSumReversed = (reverseNumber(digitSum));
+        return(digitSum * digitSumReversed == value);
+    }
 
-        return false;
+    private static int reverseNumber(int value){
+        int dec,unit = 0;
+        dec = value % 10;
+        if(value / 10 != 0) {
+            dec = dec * 10;
+        }
+
+        unit = (value / 10) % 10;
+        if((value / 10) % 10 > 1){
+            dec = dec * 10;
+            unit = unit * 10;
+        }
+
+        return (dec + unit);
     }
 }
