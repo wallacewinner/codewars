@@ -1,5 +1,9 @@
 package com.codewar.training;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 /**
  * In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
  * Example
@@ -8,4 +12,10 @@ package com.codewar.training;
  * Kata.filterList(List.of(1, 2, "a", "b", "aasf", "1", "123", 231)) => List.of(1, 2, 231)
  */
 public class ListFiltering {
+
+    public static List<Object> filterList(final List<Object> list) {
+        return list.stream()
+                .filter(item -> item instanceof Integer)
+                .collect(Collectors.toList());
+    }
 }
