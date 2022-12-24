@@ -11,6 +11,14 @@ package com.codewar.training;
 
 public class Isograms {
     public static boolean isIsogram(String str) {
-        return false;
+         String[] letters = str.toLowerCase().split("");
+         int letterLength = letters.length;
+         for (int i = 0; i < letterLength; i++) {
+             String letter = letters[i];
+             for (int j = i + 1; j < letterLength; j++) {
+                 if(letter.equals(letters[j])) return false;
+             }
+         }
+         return true;
     }
 }
